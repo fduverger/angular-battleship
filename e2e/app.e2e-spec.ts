@@ -9,6 +9,6 @@ describe('app-name App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to angular!');
+    expect(page.getParagraphText()).toEqual('Welcome to battleship!');
   });
 });
