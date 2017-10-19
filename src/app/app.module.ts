@@ -1,13 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule, Action } from '@ngrx/store';
 import { NgModule } from '@angular/core';
+import { playerCountReducer } from './player_counter';
 
 import { AppComponent } from './app.component';
-
-export function counterReducer(state: number = 0, action: Action) {
-	console.log('reducing...')
- return 0
-}
 
 @NgModule({
   declarations: [
@@ -15,7 +11,7 @@ export function counterReducer(state: number = 0, action: Action) {
   ],
   imports: [
     BrowserModule,
-    StoreModule.provideStore({ playerCounter: counterReducer})
+    StoreModule.provideStore({ playerCount: playerCountReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

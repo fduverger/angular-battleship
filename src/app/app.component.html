@@ -4,6 +4,14 @@
     Welcome to {{title}}!
   </h1>
 
-  <div style="text-align:center" *ngIf="counter">Players: {{counter | async }}</div>
+  <div style="text-align:center">
+    <button class="btn" (click)="playerJoin()">Simulate Player Join</button>
+    <button class="btn" (click)="playerLeave()">Simulate Player Leave</button>
+    <button class="btn" (click)="reset()">Reset player count</button>
+  </div>
+
+  <div style="text-align:center">
+    Number of Players: {{ playerCount | async }}
+  </div>
 </div>
 

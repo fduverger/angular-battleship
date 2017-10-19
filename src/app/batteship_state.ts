@@ -1,3 +1,0 @@
-interface BattleshipState {
-	playerCounter: number;
-}

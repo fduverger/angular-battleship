@@ -1,6 +1,8 @@
 import { Store } from '@ngrx/store';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { AppState } from './app.state';
+import { PLAYER_JOIN, PLAYER_LEAVE, RESET } from './player_counter';
 
 interface BattleshipState {
 	playerCounter: number;
@@ -12,12 +14,23 @@ interface BattleshipState {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	counter: Observable<number>;
+	playerCount: Observable<number>;
+  title: string = 'Battleship';
 
-	constructor(private store: Store<BattleshipState>) {
-		this.counter = store.select('playerCounter');
-		console.log(this.counter);
+	constructor(private store: Store<AppState>) {
+		this.playerCount = store.select('playerCount');
 	}
 
-  title = 'battleship';
+	playerJoin() {
+		this.store.dispatch({type: PLAYER_JOIN })
+	}
+
+	playerLeave() {
+		this.store.dispatch({type: PLAYER_LEAVE})
+	}
+
+	reset() {
+		this.store.dispatch({type: RESET})
+	}
+
 }
