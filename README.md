@@ -14,15 +14,7 @@ Check the following url for more info(http://www.kidspot.com.au/things-to-do/act
 This is a display only site that receives information from a remote battleship game and
 renders the curent state.
 
-Welcome Page:
-
-    Welcome to Battleships
-
-    The players are arriving:
-
-        [PLAYER COUNT]
-
-Board Page:
+Main Page
 
     State: [SHIPS BEING ADDED]   Players: [PLAYER COUNT]
 
@@ -41,13 +33,6 @@ Board Page:
     | | | | | | | | | | | | | | | | | | | | | | | | | | |
     | | | | | | | | | | | | | | | | | | | | | | | | | | |
     _____________________________________________________
-
-     1 - [PLAYER NAME]
-     2 - [PLAYER NAME]
-     3 - [PLAYER NAME]
-     4 - [PLAYER NAME]
-
-Scrore Board
 
      [PLAYER NAME] [NUMBE SHIPS LEFT]
      [PLAYER NAME] [NUMBE SHIPS LEFT] [WINNER]
