@@ -1,5 +1,9 @@
 # angular-battleship
+
+[![Build Status](https://travis-ci.org/fduverger/angular-battleship.svg?branch=master)](https://travis-ci.org/fduverger/angular-battleship)
+
 BattleShip Game
+
 - Rules and game play:
         
         * Plot all of your ships by drawing an outline of each ship on the grid according to its size. For example, a battleship is four blocks, but an aircraft carrier is five blocks. This is illustrated in the key on the printable game page. Ships may not overlap.
@@ -34,7 +38,7 @@ Main Page
     | | | | | | | | | | | | | | | | | | | | | | | | | | |
     _____________________________________________________
 
-     [PLAYER NAME] [NUMBE SHIPS LEFT]
-     [PLAYER NAME] [NUMBE SHIPS LEFT] [WINNER]
-     [PLAYER NAME] [NUMBE SHIPS LEFT]
-     [PLAYER NAME] [NUMBE SHIPS LEFT]
+     [PLAYER NAME] [NUMBER SHIPS LEFT]
+     [PLAYER NAME] [NUMBER SHIPS LEFT] [WINNER]
+     [PLAYER NAME] [NUMBER SHIPS LEFT]
+     [PLAYER NAME] [NUMBER SHIPS LEFT]
