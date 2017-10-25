@@ -11,8 +11,8 @@ export function playerCountReducer(state: number = 0, action: Action) {
 		case PLAYER_LEAVE:
 			return Math.max(0, (state - 1));
 		case RESET:
-			return 0
+			return 0;
 		default:
 			return state;
 	}
-} 
+}
