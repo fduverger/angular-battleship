@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/fduverger/angular-battleship.svg?branch=master)](https://travis-ci.org/fduverger/angular-battleship)
 
-BattleShip Game
+# BattleShip Game
 
 - Rules and game play:
         
@@ -18,7 +18,7 @@ Check the following url for more info(http://www.kidspot.com.au/things-to-do/act
 This is a display only site that receives information from a remote battleship game and
 renders the curent state.
 
-Main Page
+# Main Page
 
     State: [SHIPS BEING ADDED]   Players: [PLAYER COUNT]
 
@@ -42,3 +42,15 @@ Main Page
      [PLAYER NAME] [NUMBER SHIPS LEFT] [WINNER]
      [PLAYER NAME] [NUMBER SHIPS LEFT]
      [PLAYER NAME] [NUMBER SHIPS LEFT]
+
+# Reveive Data
+
+The battleship commander will send data in using a rest call.  This call will send in a definition of the entire ocean with its size and all the playeres ships.
+
+    POST http://domain/ocean
+    ocean_size: 20
+    ship: Ed,1,2,1,4
+    ship: Frank,2,10,2,14
+
+In this case, there is a 20x20 ocean with 2 ships, one played by Ed that starts at position 1x2 and ends on position 1,4 and a second player named Frank with one ship that starts at 2x10 and 2x14.
+
